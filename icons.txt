@@ -1,0 +1,12 @@
+   <div class="icon"> <!--icon1--> 
+  	 <i  class="fa fa-wheelchair" aria-hidden="true" > </i> 	 
+  	 <p>Guests with disabilities are welcome and admitted free!</p>	 
+   </div><!--icon1 ends here-->    
+   <div class="icon"> <!--icon2--> 
+  	 <i class="fa fa-print" aria-hidden="true"></i>
+  	 <p>Print your ticket at home and beat the queues!</p>
+   </div><!--icon2 ends here--> 
+   <div class="icon"> <!--icon3--> 
+  	 <i class="fa fa-calendar fa-5x" > </i>
+  	 <p>Book your trip in advance and get up to 50% discount!</p>
+   </div><!--icon3 ends here-->

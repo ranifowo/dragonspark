@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta name="description" content="Dragons Park home page">
+   <meta name="keyword" content="Dragons Park discounts, family entertainment,enjoy theme park rides, Dragons Park sea world">
+   <title>Dragons Theme Park: Low Cost Family Theme Park</title>
+   <link href="css/style.css" rel="stylesheet" type="text/css">
+   <link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!--Availability:http://fontawesome.io/icons/-->
+   <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet"><!--Availability: https://fonts.google.com/?category=Handwriting&selection.family=Schoolbell|Text+Me+One -->
+   <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet"><!--Availability: https://fonts.google.com/?category=Handwriting&selection.family=Schoolbell|Text+Me+One -->
+   <link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet"><!--Available: http://bxslider.com-->
+  </head>
+  <body>
+   <header>
+    <div class ="container">
+     <div id="logo"> 
+       <a href="index.html"><img src="img/logo.png" alt="Dragons Park Logo"/></a>
+     </div>
+     <nav> 
+      <ul>
+       	<li ><a  href="index.html">Home</a></li>
+        <li ><a  href="tickets.html">Tickets</a></li>
+        <li ><a  href="explore.html">Explore</a></li>
+        <li ><a  href="help.html">Help</a></li>
+      </ul>
+     </nav>
+     <div id="logindiv">
+       <a id="login"  rel="help"   href="#loginmodal">Login</a>
+     </div>
+   </div>
+   <!--Login form-->  
+   <div id="loginmodal" >
+    <form id="loginform" name="loginform" method="post" action="#">
+     <fieldset>
+      <legend>User Login</legend>
+      <label >Username</label>
+      <br/>
+      <input type="text" name="username" id="username" required/>
+      <br/>
+      <label >Password</label>
+      <br/>
+      <input type="password" name="password" id="password" required/>
+      <br/>
+      <label><button  class="smllbutton" type="submit" > Login</button></label>
+     </fieldset>
+    </form>
+    </div>
+   </header>
+   <!--
+   This comment refers to the front Page image between the <picture> tags.
+   Picture title: water-park-amuse-water-park-ride
+   Author: Tania Dimas 
+   Date: Aug. 7, 2015
+   Availability: https://pixabay.com/en/water-park-amuse-water-park-ride-1000607/
+   -->  
+   <picture>	
+     <source media="(min-width: 650px)" srcset="img/dragons_park_pic1.jpg">
+     <source media="(min-width: 320px)" srcset="img/dragons_park_pic2.jpg">
+     <img src="img/dragons_park_pic1.jpg" alt="A large front page picture showing Dragons Park water slide ride." 
+     style="width:100%;">
+   </picture> 
+   <div class="container1" >
+    <div id="newsec" > 
+      <h2 >Dragons Park News &amp; Updates</h2> 
+      <div id="signup"> <!--Sign up container--> 
+      <button  class="button" onclick="location.href='signup.html';">Sign Up</button> 
+      </div>
+    </div>  
+   </div>
+   <section><!--Dragons Park news and update section-->
+     <div class="container" >
+     <!--
+     This comment referes to materials used within the <video> tags.
+     POSTER
+     Picture title: clown-fish-nemo
+     Author: Naomi Kalloe 
+     Date: March 23, 2017
+     Availability: https://pixabay.com/en/clown-fish-nemo-animal-nature-wild-2199907/	
+     VIDEO
+     Video title: sting-ray-fish
+     Author: Timofey Iasinskii 
+     Date: Not known
+     Availability:https://pixabay.com/en/videos/sting-ray-fish-marine-ray-5271/
+     --> 	 
+  	   <div  class="box"> <!--box1-->  
+  	 	 <div>
+  	      <video poster="img/clown-fish-2199907_640.jpg" controls>
+           <source src="video/StingRay-5271.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+           <source src="video/StingRay-5271.wmv" type='video/wmv;codecs="wmv3, wma9"' />
+           <source src="video/StingRay-5271.webm" type='video/webm;codecs="vp8, vorbis"' />
+           <p>Your browser does not support the video tag.</p>
+          </video> 
+         </div>
+         <div class="lit">
+           <h3>Sea World</h3>
+           <p>	
+            Visit our SeaWorld and experience a great adventure into the deep ocean where you will meet 
+            amazing sea animals like the Stingray and the Great white shark. 
+            Read more about <a rel="help" id="btn1"  href="#modal1">Dragons Park Sea World.</a>
+           </p>
+          </div>
+          <div id="modal1">
+            <h3>Dragons Park Sea World</h3>	
+            <p>We have reconstructed Dragons Park Sea World so that our Sea animals can live in a pure and 
+             natural looking habitat.  Dragons Park Sea World also features new technology that makes it possible for 
+          	 guests to walk or swim safely amongst Sea animals such as the Great White Shark by making guest invincible 
+          	 to some category of Sea animals.
+             </p>
+             <p>
+             Our new technology also makes it possible for guest cloths to remain 100% dry even when under water.
+             </p>
+           </div>
+         </div><!--box1 ends here-->
+         <div class="box"><!--box2 starts here-->
+      	    <div>
+  	  	      <img src="img/picture3.jpg" alt="Picture of a man on a white horse fighting a dragon." />
+  	        </div>
+  	      <div class="lit">
+  	  	     <h3>Dragon Fight</h3>	
+	         <p>Dragons Park virtual reality centre creates immersive and unforgettable 3D experiences.  
+             To experience what it feels like fighting a real Dragons, try our new virtual reality game 
+             called <a rel="help" id="btn2x"  href="#modal2" >Dragon Fight.</a>
+             </p>
+          </div>
+          <div id="modal2">
+             <h3>Dragon Fight</h3>	
+             <p>
+             Dragon Fight is our new virtual reality game that puts you in an environment that make you feel
+             you really are in a world that is being invaded by Dragons. It offers 360° vision and sounds and your movement 
+             effects what you can see and do.
+             </p>
+          </div>
+          </div> <!--box2 ends here-->
+  	      <div class="box"> <!--box3 start here-->
+  	  	    <div id="box3" class="newoffers" >
+  	  	    <!--$("#newoffers,#contus").load('advert.txt'); Loads special offers -->     	    
+  	  	    </div>
+	      </div><!--box3 ends here-->
+  	</div><!--container end here-->	 
+   </section><!--Dragons Park news and update section end here--> 
+ 
+    <div class="container" ><!--Icons container start-->	 
+         <div class="icon">
+  	       <i class="fa fa-wheelchair" aria-hidden="true" > </i> 	 
+  	       <p>Guests with disabilities are welcome and admitted free!</p>	 
+         </div>   
+         <div class="icon"> 
+  	       <i class="fa fa-print" aria-hidden="true"></i>
+  	       <p>Print your ticket at home and beat the queues!</p>
+         </div>
+         <div class="icon"> 
+  	       <i class="fa fa-calendar fa-5x" > </i>
+  	       <p>Book your trip in advance and get up to 50% discount!</p>
+           </div>
+    </div><!--Icons container end here-->	
+   <section id="bottom">
+    <div class="container" >
+  	      <ul>
+  	    	<li><h3> Park Information</h3></li>
+    	    <li><a href="aboutus.html">About Us</a></li>
+    	    <li><a href="contaus.html">Contact Us</a></li>
+    	    <li><a href="facilities.html">Facilities</a></li>
+    	    <li><a href="sitemap.html">Site Map</a></li>
+          </ul>
+          <ul>
+  	   	    <li><h3> Quick links</h3></li>
+    	    <li><a href="tickets.html">Tickets</a></li>
+    	    <li><a href="enquiry.html">Enquiry/Complaint</a></li>
+    	    <li><a href="explore.html">Rides & Attractions</a></li>
+    	    <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+          <div id="promoholder">
+            <div id="promo" >
+              <p>
+               Dragon Park offer great entertainment for families and groups with over 50 rides and attractions. 
+              </p>	
+            </div>    
+            <div id="slideshow" > 	     
+              <ul class="bxslider">
+               <li><img src="/img/apartment-1822409_640.jpg" alt=" " /></li>
+               <li><img src="/img/cafe-1697992_640.jpg" alt=" "/></li>
+               <li><img src="/img/sunbeds-2439969_640.jpg" alt=" "/></li>
+               <li><img src="/img/dragon-754877_640.jpg" alt=" "/></li>
+              </ul> 
+            </div>    
+           </div>     
+    </div>
+   </section>  
+   <footer id="footnote">
+    <!--Footer content is inserted here from the main.js file-->   
+   </footer>
+    <script src="js/jquery-3.2.1.min.js"></script><!--jQuery liabrary available at https://jquery.com-->
+    <script src="js/jquery.leanModal.min.js"></script><!--Availability: http://leanmodal.finelysliced.com.au/-->
+    <script src="js/main.js"></script>
+    <script src="js/j-query.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script><!--Availability: https://jqueryui.com/--> 
+    <script src="/js/jquery.bxslider/jquery.bxslider.min.js"></script><!--Available: http://bxslider.com-->
+  </body>
+</html> 

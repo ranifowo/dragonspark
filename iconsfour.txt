@@ -1,0 +1,17 @@
+
+<div class="iconT"> <!--icon1--> 
+  	 <i  class="fa fa-wheelchair  fa-3x" aria-hidden="true" > </i> 	 
+  	 <p>Guests with disabilities are welcome and admitted free!</p>	 
+   </div><!--icon1 ends here-->    
+   <div class="iconT"> <!--icon2--> 
+  	 <i class="fa fa-print  fa-3x" aria-hidden="true"></i>
+  	 <p>Print your ticket at home and beat the queues!</p>
+   </div><!--icon2 ends here--> 
+   <div class="iconT"> <!--icon3--> 
+  	 <i class="fa fa-calendar  fa-3x" > </i>
+  	 <p>Book your trip in advance and get up to 50% discount!</p>
+   </div><!--icon3 ends here-->
+  	<div class="iconT"> <!--icon4--> 
+  	 <i class="fa fa-key  fa-3x" > </i>
+  	 <p>Admits 5 people for 12 months and includes free parking.</p>
+   </div><!--icon4 ends here-->  	

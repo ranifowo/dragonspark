@@ -1,0 +1,50 @@
+﻿ID,Navigation title,URL,File Type,Last Updated,Owner,Comment,Delete?
+1,HOME,index.html,html,31-Jul-17,Rasaki -07956591242,,No
+2,   Logo,img/logo.png,png,31-Jul-17,Rasaki -07956591242,,No
+3,   Login Form,index.html,html,31-Jul-17,Rasaki -07956591242,,No
+4,   Water-park-amuse-water-park-ride,img/dragons_park_pic1.jpg,jpg,31-Jul-17,Rasaki -07956591242,Front page picture,No
+5,   Water-park-amuse-water-park-ride,img/dragons_park_pic2.jpg,jpg,31-Jul-17,Rasaki -07956591242,Front page picture for small devices,No
+6,    Video poster,img/clown-fish-2199907_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,,No
+7,    Sting Ray Video,video/StingRay-5271.mp4,mp4,31-Jul-17,Rasaki -07956591242,,No
+8,    Sting Ray Video,video/StingRay-5271.wmv,wmv,31-Jul-17,Rasaki -07956591242,,No
+9,    Sting Ray Video,video/StingRay-5271.webm,webm,31-Jul-17,Rasaki -07956591242,,No
+10,    Sign UP Page,signup.html,html,31-Jul-17,Rasaki -07956591242,,No
+11,       Page Header ,header.txt,txt,31-Jul-17,Rasaki -07956591242,Used for loading the header section on all pages except the front page.,No
+12,       Contact Form,signup.html,html,31-Jul-17,Rasaki -07956591242,,No
+13,       News Picture,img/mythical-creatures-235034_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Picture on news page,No
+14,    Awesome Fonts,font/font-awesome/css/font-awesome.min.css,css,31-Jul-17,Rasaki -07956591242,,No
+15,ABOUT US,aboutus.html,html,31-Jul-17,Rasaki -07956591242,,No
+16,   About us page picture,img/garden-2073323_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Picture on about us page,No
+17,TICKETS,tickets.html,html,31-Jul-17,Rasaki -07956591242,,No
+18,   Day ticket picture,img/carousel-1387597_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,,No
+19,   VIP Pass picture,img/roller-coaster-1701089_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,,No
+20,   Short break picture,img/attraction-49033.jpg,jpg,31-Jul-17,Rasaki -07956591242,,No
+21,   Annual Pass picture,img/corfe-castle-748668_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,,No
+22,   jquery UI Calender,jquery-ui-1.12.1/jquery-ui.js,js,31-Jul-17,Rasaki -07956591242,,
+23,EXPLORE,explore.html,html,31-Jul-17,Rasaki -07956591242,,No
+24,   Hotel Room Picture,img/apartment-1822409_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Small Picture,No
+25,   Hotel Room Picture,img/L-apartment-1822409_1280.jpg,jpg,31-Jul-17,Rasaki -07956591242,Large Picture,No
+26,   Restaurant Picture,img/cafe-1697992_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Small Picture,No
+27,   Restaurant Picture,img/L-cafe-1697992_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Large Picture,No
+28,   Picture of two subbeds and a swimming pool,img/sunbeds-2439969_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Small Picture,No
+29,   Picture of two subbeds and a swimming pool,img/L-sunbeds-2439969_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Large Picture,No
+30,   Picture of a Carousel,img/dragon-754877_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Small Picture,No
+31,   Picture of a Carousel,img/L-dragon-754877_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Large Picture,No
+32,   Picture of a Roller Coaster,img/roller-coaster-3864_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Small Picture,No
+33,   Picture of a Roller Coaster,img/L-roller-coaster-3864_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Large Picture,No
+34,   Picture of a boy flying on a dragon,img/dragon-637003_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Small Picture,No
+35,   Picture of a boy flying on a dragon,img/L-dragon-637003_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Large Picture,No
+36,   Picture of a train,img/borkumer-kleinbahn-2156272_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Small Picture,No
+37,   Picture of a train,img/L-borkumer-kleinbahn-2156272_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Large Picture,No
+38,   Picture of a horse drawn carriage,img/horse-drawn-carriage-2383628_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Small Picture,No
+39,   Picture of a horse drawn carriage,img/L-horse-drawn-carriage-2383628_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Large Picture,No
+40,   Tea Cup Ride,img/carnival-2456913_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Small Picture,No
+41,   Tea Cup Ride,img/L-carnival-2456913_640.jpg,jpg,31-Jul-17,Rasaki -07956591242,Large Picture,No
+42,HELP,help.html,html,31-Jul-17,Rasaki -07956591242,,No
+43,    jquery UI Accordion,http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css,url,31-Jul-17,Rasaki -07956591242,,No
+44,CONTACT US ,contaus.html,html,31-Jul-17,Rasaki -07956591242,,No
+45,   Google Map,https://developers.google.com/maps,url,31-Jul-17,Rasaki -07956591242,,No
+46,FACILITIES,facilities.html,html,31-Jul-17,Rasaki -07956591242,,No
+47,   jQuery UI Tabs - Vertical Tabs functionality,http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css,url,31-Jul-17,Rasaki -07956591242,,No
+48,SITE MAP,sitemap.html,html,31-Jul-17,Rasaki -07956591242,,No
+49,ENQUIRY/COMPLAINT,enquiry.html,html,31-Jul-17,Rasaki -07956591242,,No

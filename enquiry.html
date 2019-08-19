@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Dragons Park Enquiry"/>
+    <meta name="keyword" content="Dragons Park Enquiry" />
+    <title>Dragons Park</title>
+    <link  href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet" ><!--Availability:http://fontawesome.io/icons/-->
+    <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet"> <!--Availability: https://fonts.google.com/?category=Handwriting&selection.family=Schoolbell|Text+Me+One -->
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet"> <!--Availability: https://fonts.google.com/?category=Handwriting&selection.family=Schoolbell|Text+Me+One -->
+  </head>
+ <body >
+   <header id="sitehd">
+    <!--$('#sitehd').load('header.txt'); Loads page header here-->
+   </header>
+   <section>
+    <div class="container1" >
+     <h2 > Enquiry/Complaint </h2> 
+    </div>
+    <div class ="container">
+     <aside >
+      <div id="abt" class="newoffers" >
+       <!--Sign up confirmation message is displayed here--> 
+      </div>
+     </aside>
+     <div id="enquiry" >
+
+  	 <form id="enquiryForm" name="enquiryForm" action="#" method="post" > 
+  		<fieldset>
+  		<legend >Enquiry/Complaint Form</legend>	
+  		<label >Title </label>
+  		<br/>
+  		<select name="title"  id="eqrtitle" required>	
+  		  <option value="">Select Title</option>
+  		  <option value="Mr.">Mr.</option>
+  	      <option value="Mrs.">Mrs.</option>
+  		  <option value="Prof.">Prof.</option>
+  		</select>
+  		<br/>
+  		<label >First Name </label>
+  		<br/>	
+  		<input type="text" name="firstName"  id="fname" required/>
+  		<br/>
+        <label >Last Name </label>
+  		<br/>	
+  		<input type="text" name="lastname" id="lname" required/>
+  		<br/>
+  		<label >Mobile </label>
+  		<br/>
+  		<input type="tel" name="mobile"  id="mobile" required/>
+  		<br/>
+  		<label >Email </label>
+  		<br/>
+  		<input type="email" name="email"  id="mail" required/>
+  		<br/>
+  		<label >Message</label>
+  		<br/>
+  		<textarea id="msg"> </textarea>
+  		<br/>	
+  	    <label><button id="sMitEnqry"  class="smllbutton" type="submit">Submit!</button></label>
+  	    </fieldset>
+  	   </form>
+      </div> 
+    </div> 
+   </section>
+   <div class="container" ><!--Icons container start-->
+      <div id="iconticket">
+        <!--Icons are loaded using jQuery: $('#iconticket').load('iconsfour.txt')...;-->
+      </div>
+   </div><!--Icons container end here-->
+   <section id="bottom">
+	<div class="container" >
+      <div id="center-links">
+  	   <ul class="ul-holder">
+  	    	<li><h3> Park Information</h3></li>
+    	    <li><a href="aboutus.html">About Us</a></li>
+    	    <li><a href="contaus.html">Contact Us</a></li>
+    	    <li><a href="facilities.html">Facilities</a></li>
+    	    <li><a href="sitemap.html">Site Map</a></li>
+       </ul>
+       <ul class="ul-holder">
+  	   	    <li><h3> Quick links</h3></li>
+    	    <li><a href="tickets.html">Tickets</a></li>
+    	    <li><a href="enquiry.html">Enquiry/Complaint</a></li>
+    	    <li><a href="explore.html">Rides & Attractions</a></li>
+    	    <li><a href="signup.html">Sign Up</a></li>
+       </ul>
+     </div>
+   </div>     
+  </section>  
+  <footer id="footnote">
+  <!--Footer content is inserted here from the main.js file-->   
+  </footer>
+  <script src="js/jquery-3.2.1.min.js"></script><!--jQuery liabrary available at https://jquery.com-->
+  <script src="js/jquery.leanModal.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/j-query.js"></script>  
+  <script>
+   $('#enquiryForm').on('submit', function(event){ //Submit enquiryForm
+   event.preventDefault();
+   var elements = this.elements;
+   var title = elements.eqrtitle.value;
+   var firstName = elements.fname.value;
+   var lastName = elements.lname.value;
+   var mobile = elements.mobile.value;
+   var email = elements.email.value;
+   var message = elements.msg.value;
+   document.getElementById('enquiryForm').innerHTML = "<div id='enqrymsg'><p>Thank you for contacting Dragons Park.</p><p>We will get back to you within 48 hours.</p></div>";
+   });//Submit enquiryForm end here
+   </script>
+ </body>
+</html> 

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta name="description" content="Dragons Park Facilities"/>
+   <meta name="keyword" content="Dragons park Facilities" />
+   <title>Dragons Park Facilities</title>
+   <link  href="css/style.css" rel="stylesheet" type="text/css"/>
+   <link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet" ><!--Availability:http://fontawesome.io/icons/-->
+   <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet"><!--Availability: https://fonts.google.com/?category=Handwriting&selection.family=Schoolbell|Text+Me+One -->
+   <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet"><!--Availability: https://fonts.google.com/?category=Handwriting&selection.family=Schoolbell|Text+Me+One -->
+  </head>
+ <body>
+  <header id="sitehd">
+   <!--$('#sitehd').load('header.txt');// Loads page header here-->
+  </header>	
+  <div class="container1" >
+    <h2 > Facilities </h2> 
+  </div>
+  <section> 
+   <div class="container3">
+    <!-- VERTICAL TAB 
+    AVAILABILITY: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_vertical_tabs
+    -->
+   <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'disabled')" id="defaultOpen">Disabled Guests</button>
+    <button class="tablinks" onclick="openCity(event, 'firstaid')">First Aid Centre</button>
+    <button class="tablinks" onclick="openCity(event, 'toilets')">Toilets & Changing Facilities</button>
+    <button class="tablinks" onclick="openCity(event, 'parking')">Car Park</button>
+    <button class="tablinks" onclick="openCity(event, 'restau')">Restaurant</button>
+    <button class="tablinks" onclick="openCity(event, 'hotel')">Hotel</button>
+   </div>
+   <div id="disabled" class="tabcontent">
+    <h3>Disabled Guests</h3>
+    <p><strong>Disabled guests are welcome!</strong> We will do our best to ensure disabled guests are able to participate 
+  	in almost all activities and have a pleasurable and save visit. Please ask for an Accessibility Guide leaflet 
+  	once you arrive.
+    </p>
+    <p>We offer the following facilities for the disabled:</p>
+    <ul>
+  	  <li>Free admission for guest dependent on wheelchair or mobility scooter</li>
+  	  <li>All our rides are designed to be accessible to disabled guests.</li>
+  	  <li>Careers for disabled guest get 50% off admission fee</li>
+  	  <li>All paths have a flat and tarmac surface</li>
+  	  <li>Special car park area for the disabled</li>
+  	  <li>Ample toilet facilities for guests with disabilities</li>
+  	  <li> Restaurants, shops, toilets are wheelchair accessible</li>
+     </ul>
+     <p>Scooters and wheelchairs are available to hire from our first aid centre free of charge.
+     Availability is limited during busy periods so please book online before your visit or by calling <b>08008002.</b>
+     </p>
+    </div>
+    <div id="firstaid" class="tabcontent">
+     <h3>First Aid Centre</h3>
+     <p>We have a dedicated First Aid Centre with a trained First Aid Doctor. It is located close to the main 
+  	  entrance of the park. 
+     </p> 
+     <p>We also administer our Queue Assist Scheme and coordinate our Lost Children Procedure at our At First Aid Centre.</p>
+    </div>
+    <div id="toilets" class="tabcontent">
+    <h3>Toilets &amp; Changing Facilities</h3>
+    <p>The location of all Dragons Park’s toilet facility is shown on the Park Map and Guide, a copy of this is available 
+  	on your arrival at the main entrance. There are directional signposts around the Park as well as large boards to 
+  	help guests locate the toilets. All our toilets include Baby Changing facilities.</p>
+   </div>
+   <div id="parking" class="tabcontent">
+    <h3>Car Park</h3>
+    <p>Our Car Park is just 50 metres away from the main entrance. This parking area can easily be found by 
+  	following the clear signs from the main drive. Our car park can accommodate 5000 cars, each individual 
+  	parking bay is clearly marked and Parking is free for all guests.</p>
+   </div>
+   <div id="restau" class="tabcontent">
+    <h3>Restaurant</h3>
+    <p>Dragons Park Restaurant offer something to suit even the wildest appetite, from pizza 
+  	and pasta to oriental and Mexican dishes.</p>
+    <p>Dragons Park Restaurant has a Bar full of drinks for all ages.</p>
+   </div>
+   <div id="hotel" class="tabcontent">
+    <h3>Hotel</h3>
+    <p>Stay over at the Dragons Park Hotel and get exclusive early ride time to all rides.</p>
+    <p>We offer good rates for trip planners, corporate guests and travellers. Please call our dedicated call centre on 08008001</p>
+   </div>
+  </div>
+ </section>
+ <section id="bottom">
+ 	<div class="container" >
+     <div id="center-links">
+  	  <ul class="ul-holder">
+  	    <li><h3> Park Information</h3></li>
+    	<li><a href="aboutus.html">About Us</a></li>
+    	<li><a href="contaus.html">Contact Us</a></li>
+    	<li><a href="facilities.html">Facilities</a></li>
+    	<li><a href="sitemap.html">Site Map</a></li>
+     </ul>
+     <ul class="ul-holder">
+  	   	<li><h3> Quick links</h3></li>
+    	<li><a href="tickets.html">Tickets</a></li>
+    	<li><a href="enquiry.html">Enquiry/Complaint</a></li>
+    	<li><a href="explore.html">Rides &amp; Attractions</a></li>
+    	<li><a href="signup.html">Sign Up</a></li>
+      </ul>
+     </div>
+    </div>  
+  </section>  
+  <footer id="footnote">
+   <!--Footer content is inserted here from the main.js file-->   
+  </footer>
+  <script>
+  /* VERTICAL TAB
+  AVAILABILITY: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_vertical_tabs
+  */
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+   document.getElementById("defaultOpen").click();// Get the element with id="defaultOpen" and click on it
+   </script>
+   <script src="js/jquery-3.2.1.min.js"></script><!--jQuery liabrary available at https://jquery.com--> 
+   <script src="js/jquery.leanModal.min.js"></script><!--Availability: http://leanmodal.finelysliced.com.au/--> 
+   <script src="jquery-ui-1.12.1/jquery-ui.js"></script><!--Availability: https://jqueryui.com/--> 
+   <script src="js/j-query.js"></script>   
+   <script src="js/main.js"></script>    
+ </body>
+</html> 

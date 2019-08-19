@@ -1,0 +1,1065 @@
+/* 
+ AUTHOR: Rasaki Anifowoshe
+PROJECT: Dragons Park- A fictional Theme park.
+
+TABLE OF CONTENTS:
+01. BASELINE STYLES
+02. BODY
+03. CONTAINERS
+04. HEADER DIV INCLUDING LOGO, LOGIN FORM AND SITE NAVIGATION
+05. NEWS SECTION ON HOME PAGE
+06. FORMS
+07. SIGN UP PAGE
+08. TICKETS PAGE
+09. EXPLORE PAGE
+10. CONTACT US
+11. VERTICAL TAB
+12. BOTTOM
+13. FOOTER
+14. STYLES USED BY JQUERY/JAVASCRIPT
+15. STYLES MEDIA QUERIES
+*/
+
+
+/*==========01 BASELINE STYLES==========*/
+/* 
+ This comment refers to the font-family used for tags h2,h3,h4,p and li in this project.
+ Availability: https://fonts.google.com/?category=Handwriting&selection.family=Schoolbell|Text+Me+One 
+ */
+
+h2 {
+font-family: 'Schoolbell', cursive;
+font-size: 1.5em;
+}
+h3 {
+font-family: 'Schoolbell', cursive;
+font-size: 1.2em;
+}
+h4 {
+font-family: 'Schoolbell', cursive;
+font-size: 0.95em;
+}
+p{
+font-family: 'Text Me One', sans-serif;	
+font-size:16px;
+font-weight: bold;
+line-height: 1.6875;	
+}
+li{
+font-family: 'Text Me One', sans-serif;	
+font-size:1em;
+line-height: 1.5875;	
+}
+
+
+/*==========02 BODY==========*/
+body {
+margin:0;
+background-color:#c4c4f2;
+}
+
+
+/*==========03 CONTAINERS==========*/
+.container {
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+.container1 {
+width: 80%;
+text-align: center;
+margin: auto;
+overflow: hidden;
+}
+      .container1 h2{
+      font-size:1.65em;	
+      color: #030423;	
+      font-family: 'Schoolbell', cursive;/* Availability: https://fonts.google.com/?category=Handwriting&selection.family=Schoolbell|Text+Me+One */
+      }
+
+.container3 {
+width: 80%;
+margin: auto;
+overflow: hidden;
+padding-bottom: 50px;
+}
+/*==========04 HEADER DIV INCLUDING LOGO, LOGIN FORM AND SITE NAVIGATION==========*/
+header {
+background-color:#0f0f1d;
+min-height: 100px;
+color: #26ef30;
+}
+#logo {
+box-sizing:border-box;
+float:left;	
+width: 25%;
+margin-left: 0px;
+padding: 20px;
+}
+nav {
+float:left;
+margin-top: 5px;
+margin-right: 0px;
+width: 75%;
+}
+      nav ul {
+      padding: 10px 20px 5px 20px;
+      overflow: hidden;
+      }
+      nav li {
+      list-style-type:none; 
+      display: inline;
+      padding:0px;
+      }
+      nav ul li a {
+      font-family: 'Schoolbell', cursive;
+      text-decoration: none;
+      font-size: 1.25em;
+      color: #ffffff;	
+      background-color: #0a2d66;
+      padding: 5px 16px;
+      }
+      nav ul li a:hover {
+      background-color: #0646ad;
+      }
+#logindiv {
+text-align: center;
+padding-bottom: 10px;
+}  
+#login {/*Availability:https://www.w3schools.com/css/css3_buttons.asp*/
+font-family: 'Text Me One', sans-serif;	
+float: right;
+background-color: #26ef30;
+border: none;
+color: #FFFFFF;	
+padding: 1px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+border-radius: 16px;  
+margin-top:10px;
+margin-right:20%;  	
+}
+#loginmodal {/*Availability:https://www.w3schools.com/css/css3_buttons.asp*/
+margin-top:23px;
+background-color:#cc66ff;
+color: #ffffff;
+overflow: auto;
+width: 40%;
+padding: 30px;
+border: solid black 25px;
+max-height:60%;
+display: none;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+-moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+}
+      #loginmodal label {
+      width:100%;
+      margin-left: 20%;
+      }
+      #loginmodal input {
+      border-radius: 8px;
+      border: 1px solid #660066;
+      height: 30px;	
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+      }
+
+
+/*==========05 NEWS SECTION ON HOME PAGE==========*/
+#newsec {
+position:relative;
+box-sizing:border-box;
+text-align: center;
+float: left;
+width: 100%;
+}
+      #newsec h2 {
+      padding: 10px;
+      display:inline-block;	
+      }
+#signup {
+position:absolute;
+box-sizing:border-box;
+top:15px;
+right:5%;
+margin-top:5px;
+margin-right:0px;
+}
+.button {/*Availability: https://www.w3schools.com/css/css3_buttons.asp*/
+background-color: #e24c06;
+border: none;
+color: #ffffff;
+padding: 5px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 12px;  
+}
+.lit {
+overflow: auto;	
+}
+      .lit h3 {
+       text-align: center;	
+       font-weight: bold;
+       margin: 0;
+       padding-top: 10px;
+       }
+       .lit p {
+       line-height: 1.6875;
+       margin-top:2px;
+       padding:0 20px;		
+       text-align: justify;
+       }
+       .lit p a {
+       text-decoration: none;
+       font-weight: bold;
+       color: #e24c06;	
+       }
+.box {
+float:left;
+width: 30%;	
+margin:0 1.66%;
+color:#030423;
+background-color:#d5d5f6;
+margin-bottom: 20px;
+text-align: center;
+}
+     .box video {
+      width: 100%;
+      height: 270px;
+      background-color:#0f0f1d;
+      }
+     .box img {
+      width: 100%;
+      height: 270px;
+      }
+#modal1,#modal2 {/* Availability: http://leanmodal.finelysliced.com.au/ */
+line-height: 1.6875;
+overflow: auto;
+width: 40%;
+padding: 30px;
+border: solid black 25px;
+max-height:60%;
+display: none;
+background: #FFF;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+-moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+}
+#lean_overlay {/* Availability: http://leanmodal.finelysliced.com.au/ */
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 1000%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.newoffers{
+text-align: center;	
+padding-top:10px;
+padding-bottom: 10px;
+}
+      .newoffers a {
+      text-decoration: none;		
+      }
+.icon {
+box-sizing:border-box;
+float:left;
+width: 30%;	
+margin:0 1.66%;
+color:#030423;
+margin-top: 100px;
+margin-bottom: 100px;
+text-align: center;	
+}
+      .icon i {
+      font-size:8em;	
+      color:#8392a5;	
+      }
+.iconT {
+box-sizing:border-box;
+float:left;
+width: 22.5%;	
+margin:0 1.25%;
+color:#030423;
+margin-top: 100px;
+margin-bottom: 100px;
+text-align: center;
+}
+      .iconT i {
+      font-size:5em;	
+      color:#8392a5;	
+      }
+      .iconT p  {
+      color:#030423;
+      font-size:1em;
+      font-family: 'Schoolbell', cursive;	
+      }
+      .iconT p a {
+      text-decoration: none;
+      color:#030423;
+      }
+
+.iconU {
+float:left;
+width: 22.5%;	
+margin:0 1.25%;
+color:#FFFFFF;
+margin-bottom: 20px;
+text-align: center;
+}
+      .iconU i {
+      font-size:5em;	
+      color:#FFFFFF;	
+      }
+      
+      
+ /*==========06 FORMS==========*/	
+#AA {
+display:none;
+}
+fieldset {
+border: 1px solid #ffffff;	
+}	
+legend{
+font-size: 1.65em;	
+}	
+#ticketForm,#ticketVip,#shortbreak,#annual {
+margin: auto;
+width:40%;
+padding:5%;
+background-color:#cc66ff;
+color: #ffffff;
+}	
+.frminp{
+padding-left: 5%;
+padding-right:5%;
+}
+.chqdiv {
+padding-left: 5%;
+padding-right:5%;
+padding-top: 5px;	
+}
+.frminp input {
+border-radius: 8px;
+border: 1px solid #660066;
+height: 25px;	
+text-align: center;	
+width: 60%;
+}
+      .frminp label {
+      display:inline-block;
+      font-size: 1.40em;	
+      padding-top: 10px;
+      padding-bottom: 5px;
+      }
+.marker {
+text-align:center;	
+background-color:#ff9933;
+} 
+.gsticket input {
+width: 80%;
+border-radius: 8px;
+border: 1px solid #660066;
+height: 30px;	
+text-align: center;	
+}
+#contactForm {
+color:#FFFFFF;	
+background-color:#cc66ff;
+padding: 15px;
+}
+      #contactForm fieldset {
+      border: 1px solid #FFFFFF;	
+      }
+      #contactForm label {
+      width:100%;
+      margin-left: 10%;
+      }
+      #contactForm input {
+      border-radius: 8px;
+      border: 1px solid #660066;
+      height: 25px;	
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      }
+      #contactForm label select {
+      border: 1px solid #660066;
+      border-radius: 8px;
+      }
+         
+#submit {
+margin:15px 0px;
+font-size: 100%;
+height: 30px;
+font-weight: bold;
+float: center;	
+}
+#errormsg {
+display:inline-block;
+margin-left:10%;
+padding-top:15px;
+color: #FFFFFF;
+}
+
+.contact {/*Sets message background using javascript after a new contact has been created*/
+background-color:#ffffff;
+}
+      .contact p {/*Sets p background using javascript after a new contact has been created*/
+      padding:10px;	
+      background-color:#ffffff;	
+      font-size: 0.95em;	
+      color: #000000;
+      text-align: center;
+      }
+.smllbutton {/*Availability: https://www.w3schools.com/css/css3_buttons.asp*/
+background-color: #660066;
+border: none;
+color: #ffffff;
+padding: 5px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 0.75em;
+margin: 14px 2px;
+cursor: pointer;
+border-radius: 12px;
+ }
+#enquiry {
+background-color:#cc66ff;	
+margin-left: 2%;
+box-sizing:border-box;
+width:50%;
+float: left;
+margin-bottom: 20px;
+color: #FFFFFF;
+}
+      #enquiry label {
+      width:100%;
+      font-size: 1.2em;	
+      }
+  #enquiry form {
+  	box-sizing:border-box;
+  	padding: 5%;
+  	width:100%;
+  }
+  
+      #enquiry input {box-sizing:border-box;
+      	text-align: left;	
+      	margin-bottom:15px;
+      border-radius: 8px;
+border: 1px solid #660066;
+height: 25px;	
+padding-left:10px;
+width: 90%;
+      }
+       #enquiry select  {
+box-sizing:border-box;
+      	text-align: left;	
+      	margin-bottom:15px;
+      border-radius: 8px;
+border: 1px solid #660066;
+height: 25px;	
+padding-left:10px;
+width: 30%;
+       }
+       #enquiry textarea {
+padding-top:20px;  
+padding-left:10px;    
+box-sizing:border-box;
+border-radius: 8px;
+border: 2px solid #660066;
+height: 300px;	
+width:90%;
+      }
+#enqrymsg {
+text-align: center	
+}      
+#enquiry fieldset{
+border: 1px solid #FFFFFF;
+padding: 10px;
+}     
+#enquiry legend{
+font-size: 1.4em;	
+}
+/*==========07 SIGN UP PAGE==========*/
+#news {
+background-color:#d5d5f6;
+float: right;
+width: 68%;
+text-align: justify;
+margin-bottom: 20px;
+}
+      #news p {	
+      padding:0 20px;	
+      }
+      #news h3 {
+      padding:10px 20px;
+      margin: 0;
+      }
+figure {
+float: right;
+width: 400px;
+height: 267px;
+margin-top: 0;
+margin-right: 0;
+}
+aside {
+float: left;	
+width:30%;
+}
+ 
+ 
+/*==========08 TICKETS PAGE==========*/
+.imggallery {
+box-sizing:border-box;	
+float:left;
+width: 22.5%;
+margin:0 1.25%;
+color:#030423;
+background-color:#d5d5f6;
+text-align: center;
+}
+      .imggallery img{
+      width: 100%;		
+      }
+.ticket {
+box-sizing:border-box;
+border:1px solid #660066;	
+margin:auto;	
+width: 90%;
+min-height:35px;
+background-color:#cc66ff;
+color: #ffffff;
+text-align: center;
+margin-top: 1px;
+margin-bottom: 1px;
+padding: 10px;
+}
+      .ticket h3 {
+      color: #ffffff;
+      font-size:1.1em;
+      margin:0;
+      }
+      .ticket p {
+      color: #ffffff;
+      margin:0;
+      }
+.tickettype {
+background-color:#ffffff;
+padding-bottom: 10px;
+color: #000000;	
+}
+#report {
+margin:auto;
+width: 40%;
+color:#FFFFFF;
+background-color:#FFFFFF;
+padding: 20px;
+}
+      #report table {
+      width:100%;	
+      background-color:#cc66ff;
+      padding: 20px;
+      }
+      #report table th {
+      text-align: right;
+      width:50%;	
+      font-size: 0.85em;
+      }
+      #report table td {
+      text-align: left;
+      font-size: 0.75em;
+      width:50%;		
+      }
+      #report table h3 {
+      color: #000000;	
+      font-size: 0.95em;
+      }
+#annualpass {
+width: 35%;
+margin: auto;
+background-color:#e24c06;
+border: double 8px #ffffff;	
+text-align: center;	
+color: #ffffff;
+}
+      #annualpass span {
+      font-size: 1.50em;	
+      padding-top: 50px;
+      }
+      #annualpass h2 {
+      font-size: 2em;	
+      color: #ffffff;
+      }
+#passpay {
+padding-top: 50px;
+width: 35%;
+margin: auto;
+text-align: center;	
+}
+.price {
+height:100px;	
+}
+      .price p {
+      font-size: 1.15em;	
+      margin: 0;
+      padding: 0;	
+      }
+      .price h2 {
+      font-family: 'Schoolbell', cursive;
+      font-size: 1.20em;	
+      line-height: 1;
+      }
+/*==========09 EXPLORE PAGE==========*/
+.gallery {
+ margin: 5px;
+ float: left;
+ width :31.33%;   
+}
+      .gallery img {
+      width: 100%;
+       height: auto;
+       }
+.pfocus {
+border: 1px solid red;	
+}
+#d {
+width: 100%;
+margin:auto;	
+padding-top: 20px;
+padding-bottom: 50px;
+}
+.desc {margin: auto;
+padding: 15px;
+text-align: center;
+color:#ffffff;
+width: 50%;
+}
+.hideme {
+display: none;	
+}
+      .hideme img {
+      width: 100%;
+      }
+#gallerybody {
+background-color:#404040;	
+}
+      #gallerybody h2 {
+      color: #FFFFFF;	
+      }
+/*==========10 CONTACT US==========*/
+ #map {
+ float:left;
+ height: 400px;
+ width: 68%;
+ margin-top: 20px;
+  }
+#transport {
+box-sizing:border-box;
+float:left;
+height: 400px;
+width: 68%;
+margin-top: 20px;
+background-color: #ffffff;
+}
+     #transport h3,h4{
+     padding: 0 15px;	
+     }
+     #transport p {	
+     font-size: 0.85em;
+     padding: 0 15px;	
+     margin: 0;
+     }
+#openingtimes {
+height: 400px;
+box-sizing:border-box;
+float:right;
+background-color: #ffffff;	
+width: 30%;	
+margin-top: 20px;
+}
+     #openingtimes h3,h4{
+     padding: 0 15px;	
+     }
+     #openingtimes p {	
+     font-size: 0.85em;
+     padding: 0 15px;	
+     margin: 0;
+     }
+#reachus {
+font-size:1em;
+box-sizing:border-box;
+background-color: #ffffff;
+float: left;
+width: 100%;
+padding-bottom: 20px;
+}
+      #reachus ul {
+      list-style-type:none;	
+      box-sizing:border-box;
+      float: left;
+      width: 33.33%;
+      margin: 0;	
+      }
+      #reachus ul a {
+      text-decoration: none;	
+      color: #000000;	
+      }
+#address {
+background-color: #ffffff;
+float: none;
+box-sizing:border-box;
+text-align: center;
+width: 100%;
+padding: 20px;
+}
+#contus {
+float:right;
+background-color: #ffffff;	
+width: 30%;	
+margin-top: 20px;
+}
+
+
+
+/*==========11 VERTICAL TAB==========*/
+/* Style the tab 
+AVAILABILITY: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_vertical_tabs
+ */
+div.tab {
+    float: left;
+    box-sizing: border-box;
+    background-color: #4d94ff;
+    width: 30%;
+     min-height: 600px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color:  #99c2ff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    box-sizing: border-box;
+    width: 70%;
+    border-left: none;
+    min-height: 600px;
+    background-color:#ffffff;
+}
+
+   
+/*==========12 BOTTOM==========*/
+#bottom {
+overflow: hidden;
+background-color:#030423;
+color:  #ffffff;	
+}
+    #bottom ul{
+     float: left;
+     list-style-type: none; 		
+     }
+     #bottom a {
+     text-decoration: none;
+     font-size: 13px;
+     color:  #ffffff;	
+     }
+#center-links  {box-sizing:border-box;
+margin: auto;
+width: 40%;
+overflow: hidden;	
+}
+.ul-holder {
+box-sizing:border-box;
+width: 50%;	
+display: inline-block;
+}   
+   
+     
+#promoholder { 
+box-sizing:border-box;	
+float:right;
+margin-right: 0;
+width: 50%;
+margin-top: 60px;
+margin-bottom: 10px;	
+}
+#promo { float: left;
+box-sizing:border-box;
+width: 40%;
+display:inline-block;
+}
+       #promo p { 
+       font-size:16px;
+       text-align:center;
+       }
+#slideshow {
+box-sizing:border-box;
+margin-right:0;
+display:inline-block;
+width: 55%;
+float: right;
+}
+#sitemap {
+color: #030423;	
+}
+      #sitemap ul li a {	
+      text-decoration: none;
+      }
+      
+
+/*==========13 FOOTER==========*/
+footer {	
+background-color:#0b0b0c;	
+color:  #ffffff;	
+text-align: center;
+padding:10px;	
+}
+     footer p {
+     font-family: 'Text Me One', sans-serif;
+     font-size: 10px;
+     }
+
+/*==========14 STYLES USED BY JQUERY/JAVASCRIPT ==========*/
+#advert {
+background-color:#FFFFFF;		
+}
+#speo {
+padding: 0;	
+margin: 0;
+color: #030423;	
+}
+#bnow {
+display: none;	
+text-align: center;	
+}
+#accordion {
+padding-bottom: 50px;
+width: 70%;
+margin: auto;
+}
+
+
+	
+/*==========15 STYLES MEDIA QUERIES ==========*/
+@media screen and (max-width: 768px) {	
+	
+#logo {
+float:none;	
+text-align: center;
+width: 100%;
+}
+nav {
+float:none;
+width: 100%;
+}
+      nav ul {
+      padding: 0px;	
+      }
+      nav li {
+      list-style-type:none; 
+      text-align: center;
+      display: block;
+      margin-bottom: 15px;
+      padding-left: 25%;
+      padding-right: 25%; 
+      }
+      nav ul li a {
+      text-decoration: none;
+      font-size: 15px;
+      color: #ffff;
+      display: block;
+      width: 50%;
+      padding-left:25%;
+      padding-right: 25%; 
+      }
+#login {
+float: none;
+margin: auto;   
+}
+.box {
+float:none;
+width: 100%;
+margin-bottom: 10px;
+color:#030423;
+text-align: justify;
+background-color:#d5d5f6;
+} 
+aside {
+width:100%;
+}
+#newsec {
+position:relative;
+width: 100%;
+margin-bottom: 40px;
+}
+#signup {
+position:absolute;
+top:90px;
+width: 100%;
+text-align: center;
+right:0%;
+}
+#news {
+float: none;
+width: 100%;
+}
+      #news figure {
+      margin-top: 10px;	
+      }
+.iconT {
+float:none;
+width: 100%;
+} 
+.icon {
+float:none;
+width: 100%;	
+}
+.imggallery {
+float:none;
+width: 100%;
+}
+#ticketForm,#ticketVip,#shortbreak,#annual {
+width:90%;
+padding:5%;
+}
+#report {
+width: 100%;
+padding: 0;
+}
+      #report table {
+      width:100%;	
+      }
+#annualpass {
+width: 80%;
+}
+#passpay {
+padding-top: 50px;
+width: 35%;
+margin: auto;
+text-align: center;	
+}
+#modal1,#modal2,#loginmodal {
+width: 60%;	
+}
+#loginmodal label {
+width:100%;
+margin-left: 10%;
+}
+#loginmodal input {
+border-radius: 8px;
+border: 1px solid #660066;
+height: 30px;	
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+}
+#reachus ul {
+width: 100%;
+}
+#address {
+box-sizing:border-box;
+width: 100%;
+text-align: center;
+}
+      #address P {padding: 20px;
+      font-weight:bold;
+      font-size: 1em;	
+      font-family:"Arial Black";
+      }
+#contus {
+width: 100%;	
+}
+.acchelp {
+border: 1px solid #FFFFFF;
+}
+      .acchelp p ul {
+      padding-top: 0;	
+      border: 1px solid #FFFFFF;
+      }
+.gallery {
+width :90%; 
+height: auto;
+}
+.desc {
+text-align: center;
+width: 90%;
+}
+
+
+#map {
+height: 400px;
+width: 90%;
+margin: 20px;
+}
+#transport,#openingtimes {
+width: 100%;
+padding: 20px;
+height: 500px;
+}
+#promoholder { 
+float: none;
+width: 100%;
+}
+#promo {  float: none;	
+width: 100%;
+}
+#slideshow {
+width: 100%;
+float: none;
+}
+#center-links  {
+width: 100%;
+}
+#enquiry {
+width:100%;
+float: none;
+}
+.ul-holder{
+width:100%;	
+float: none;
+}	
+}	

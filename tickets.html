@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Theme Park"/>
+    <meta name="keyword" content="Dragons" />
+    <title>Dragons Park Tickets</title>
+    <link  href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href = "jquery-ui-1.12.1/jquery-ui.css" rel = "stylesheet"><!--Availability: https://jqueryui.com/--> 
+    <link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet" ><!--Availability:http://fontawesome.io/icons/-->
+    <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet"> <!--Availability: https://fonts.google.com/?category=Handwriting&selection.family=Schoolbell|Text+Me+One -->
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet"> <!--Availability: https://fonts.google.com/?category=Handwriting&selection.family=Schoolbell|Text+Me+One -->
+  </head>
+  <body>
+    <header id="sitehd">
+      <!--$('#sitehd').load('header.txt');// Loads page header here-->
+    </header>
+    <div class="container1" >
+      <h2 > Tickets </h2> 
+    </div>
+    <section>
+     <div class="container" >
+      <div id="AA"><!--Start of div "AA"-->
+        <form id="ticketForm" ><!--Start of form "ticketForm"--> 
+         <fieldset >
+          <legend >Day Ticket</legend>		
+          <div class="frminp">
+            <label >Date </label><br/>
+            <input id="dateStart"  type="text"  autocomplete="off" required/>
+            <br/>      
+            <label >How many people?(Free for disabled people)</label><br/>
+            <input  id="spinner" type="number" name="spinner"  value="0"  min="1" required/>
+            <br/>
+          </div>        
+          <div class="chqdiv"> 
+            <label ><input type="checkbox" name="upgrade" id="upgradex"/>Upgrade to a 2-day for 50% off per person </label>
+            <br>
+          </div>
+          <div class="frminp">
+            <label>How are you paying?</label>
+            <br/>
+          </div>	      
+          <div class="chqdiv">  
+  	        <label><input type="radio" name="paymth"  value="Card Payment" checked/> Debit/Crdit Card</label>
+  	        <br/>
+        	<label><input type="radio" name="paymth"  value="Bank Transfer" /> Bank Transfer</label>
+  	        <br/>
+  	        <label><input type="radio" name="paymth"  value="PayPal" /> PayPal</label>
+  	        <br/>             
+            <label><button id="cancelDayTicket"  class="smllbutton" type="submit" >Cancel</button></label>
+            <label><button  class="smllbutton" type="submit" > Submit!</button> </label>
+          </div>
+         </fieldset>      
+        </form><!--end of form "ticketForm"--> 
+         
+         
+  	    <form id="ticketVip" class = " " name="ticketVip" action="tickets.html" method="post" ><!--Start of form "ticketVip"--> 
+  	     <fieldset>
+  		  <legend >VIP Pass</legend>
+  		  <div class="frminp">
+  		    <label >Date </label><br/>
+            <input id="dateStart2"  type="text"  autocomplete="off" required/>
+            <br/>         
+            <label >How many VIP Passes would you like?</label><br/>
+            <input  id="spinner2" type="number" name="spinner"  value="0"  min="1" required/>
+  	        <br/>
+  	      </div> 
+  	      <div class="frminp">
+             <label>How are you paying?</label>
+             <br/>
+          </div>	 
+          <div class="chqdiv">  
+        	<label><input type="radio" name="paymth"  value="Card Payment" checked/> Debit/Crdit Card</label>
+        	<br/>
+           	<label><input type="radio" name="paymth"  value="Bank Transfer" /> Bank Transfer</label>
+        	<br/>
+  	        <label><input type="radio" name="paymth"  value="PayPal" /> PayPal</label>
+         	<br/> 
+    	   <label> <button id="cancelVipTicket"  class="smllbutton" type="submit" >Cancel</button></label>
+  	       <label><button  class="smllbutton" type="submit" > Submit!</button></label>
+  	      </div>
+  	     </fieldset>
+  	    </form><!--End of form "ticketVip"-->     
+	    
+	    
+        <form id="shortbreak" class = " " name="shortbreak" action="tickets.html" method="post" ><!--Start of form "shortbreak"--> 
+  	     <fieldset>
+  		  <legend >Short Break</legend>
+  		  <div class="frminp">
+    	     <label>Start Date </label><br/>
+    	     <input type="text" name="startDate3" id="dateStart3" autocomplete="off" required/>
+  		     <br/>
+  		     <label>End Date </label><br/>
+    	     <input type="text" name="endDate"  id="dateEnd" autocomplete="off" required/>
+  		     <br/>
+             <select  name="adult"  required>
+          	  <option value="" >Number of Adults </option>
+          	  <option value="1">1 </option>
+          	  <option value="2">2 </option>
+           	  <option value="3">3 </option>
+          	  <option value="4">4 </option>
+          	  <option value="5">5 </option>
+          	  <option value="6">6 </option>
+          	  <option value="7">7 </option>
+          	  <option value="8">8 </option>
+             </select>
+             <select  name="children" >
+           	  <option value="0">Number of Children </option>
+          	  <option value="1">1 </option>
+          	  <option value="2">2 </option>
+          	  <option value="3">3 </option>
+          	  <option value="4">4 </option>
+          	  <option value="5">5 </option>
+          	  <option value="6">6 </option>
+          	  <option value="7">7 </option>
+          	  <option value="8">8 </option>
+             </select>
+              <br/>
+          </div>
+          <div class="chqdiv">  
+             <label><input type="checkbox" name="dayTicket" id="dayTicket" checked>Include Theme Park Tickets</label>
+  	      	 <br/>
+  	      	 <label><input type="checkbox" name="day2" id="day2">Upgrade to a 2-day for 50% off per person</label>
+             <br/>
+  	      	 <label><input type="checkbox" name="vip" id="vip">Include VIP Passes</label>
+             <br/>
+             </div>
+             <div class="frminp">
+             <label><button id="cancelSbreak"  class="smllbutton" type="submit" >Cancel</button></label>
+  		     <label><button  class="smllbutton" type="submit" > Submit!</button></label>
+  		   </div>
+  		  </fieldset>
+  		</form><!--End of form "shortbreak"-->
+  		
+  		<form id="annual" class = " " name="annual" action="tickets.html" method="post" ><!--Start of form "annual"--> 
+  		 <fieldset> 
+  		   <legend >Annual Pass</legend>
+    	   <div class="gsticket">
+    	   	<label >Start Date </label><br/>
+             <input id="dateStart4"  type="text"  autocomplete="off" required/>
+             <br/> 
+             <label >First Name </label><br/>
+             <input type="text" name="firstname"  id="fname" required/>
+             <br/>  
+             <label >Last Name </label><br/>
+             <input type="text" name="lastname"  id="lname" required/>
+             <br/> 
+            <label >Mobile </label><br/>
+             <input type="tel" name="tel" id="mobile" required>
+             <br/> 
+            <label >Email </label><br/>
+             <input type="email" name="email"  id="mail" required/>
+             <br/> 
+          </div>
+  		   <button id="cancelAnnual"  class="smllbutton" type="submit" >Cancel</button>
+  		   <button  class="smllbutton" type="submit" > Submit!</button>
+	      </fieldset> 
+  		</form><!--End of form "annual"-->
+  	  </div><!--End of div "AA"-->
+  	  
+      <div id="BB"><!--Start of div "BB"-->	
+  	    <div class="imggallery"> 
+         <!--Availability: https://pixabay.com/en/carousel-enjoy-pretty-1387597/-->
+   	     <img src="img/carousel-1387597_640.jpg" alt="Picture showing a carousel." />
+         <div class="price"><h2>£15<sub>pp</sub> <br/>Day Ticket</h2><p>50% off 2-day Ticket</p></div>
+   	     <button id="buyT1" class="smllbutton" >Buy Now</button> 	
+        </div>
+        <div class="imggallery"> 
+   	     <!--Availability: https://pixabay.com/en/roller-coaster-ride-people-fun-1701089/-->
+     	 <img src="img/roller-coaster-1701089_640.jpg" alt="Picture showing roller-coaster." />	
+     	 <div class="price"><h2>£25<sub>pp</sub> <br/>VIP Pass</h2><p>Includes Day Ticket</p></div>
+    	 <button id="buyT2"  class="smllbutton" >Buy Now</button> 
+        </div>
+        <div class="imggallery"> 
+    	 <!--Availability: https://pixabay.com/en/attraction-theme-park-entertainment-49033/-->
+     	 <img src="img/attraction-49033.jpg" alt="Picture showing a Cottage on a tree."/>	
+     	 <div class="price"><h2>£65<sub>pp</sub> <br/>Short Break</h2><p>Includes Free Parking</p></div>
+   	     <button id="buyT3"  class="smllbutton" onclick="location.href='#';">Buy Now</button> 	
+        </div>
+        <div class="imggallery"> 
+      	  <!--Availability: https://pixabay.com/en/corfe-castle-england-uk-748668/-->
+   	      <img src="img/corfe-castle-748668_640.jpg" alt="Picture showing the entrance to a castle."/>
+   	      <div class="price"><h2>£650<sub>pp</sub> <br/>Annual Pass</h2><p>Admits 5 People</p></div>	
+     	  <button id="buyT4"  class="smllbutton" onclick="location.href='#';">Buy Now</button> 	
+        </div>		
+       </div><!--End of div "BB"-->	
+	 </div><!-- Container end here-->
+    </section><!--Section end here--> 
+     <div class="container" ><!--Icons container start-->
+        <div id="iconticket">
+         <!--Icons are loaded using jQuery: $('#iconticket').load('iconsfour.txt')...;-->
+        </div>
+     </div><!--Icons container end here-->
+    <section id="bottom">
+     <div class="container" >
+      <div id="center-links">
+  	   <ul class="ul-holder">
+  	    	<li><h3> Park Information</h3></li>
+    	    <li><a href="aboutus.html">About Us</a></li>
+    	    <li><a href="contaus.html">Contact Us</a></li>
+    	    <li><a href="facilities.html">Facilities</a></li>
+    	    <li><a href="sitemap.html">Site Map</a></li>
+       </ul>
+       <ul class="ul-holder">
+  	   	    <li><h3> Quick links</h3></li>
+    	    <li><a href="tickets.html">Tickets</a></li>
+    	    <li><a href="enquiry.html">Enquiry/Complaint</a></li>
+    	    <li><a href="explore.html">Rides & Attractions</a></li>
+    	    <li><a href="signup.html">Sign Up</a></li>
+       </ul>
+     </div>
+     </div>
+   </section>   
+   <footer id="footnote">
+    <!--Footer content is inserted here from the main.js file-->   
+   </footer>
+   
+   <script src="js/jquery-3.2.1.min.js"></script><!--jQuery liabrary available at https://jquery.com-->  
+   <script src="js/jquery.leanModal.min.js"></script><!--Availability: http://leanmodal.finelysliced.com.au/-->
+   <script src="js/main.js"></script>
+   <script src="js/j-query.js"></script> 
+   <script src="jquery-ui-1.12.1/jquery-ui.js"></script><!--Availability: https://jqueryui.com/-->  
+ </body>
+</html> 
