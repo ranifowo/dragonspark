@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "transport": "ftp",
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "projects.gmkepay.com",
+  "port": "22",
+  "target": "public_html/projects/dragonspark",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "dragonsprk@projects.gmkepay.com",
+  "password": "#Action3",
+  "watch": []
+}
